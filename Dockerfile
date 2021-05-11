@@ -7,8 +7,7 @@ LABEL maintainer="horky@d3s.mff.cuni.cz"
 #  - Python and related utilities
 #  - system tools
 #  - developer tools
-RUN dnf install -y mc vim \
-    && dnf install -y python3 python3-pip pylint python3-virtualenv \
+RUN dnf install -y python3 python3-pip pylint python3-virtualenv \
     && dnf install -y pcre-tools bc findutils wget diffutils file \
     && dnf install -y git \
     && dnf install -y ShellCheck make pandoc  \
