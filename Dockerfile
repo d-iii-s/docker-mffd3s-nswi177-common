@@ -8,7 +8,7 @@ LABEL maintainer="horky@d3s.mff.cuni.cz"
 #  - system tools
 #  - developer tools
 RUN dnf install -y python3 python3-pip pylint python3-virtualenv \
-    && dnf install -y pcre-tools bc findutils wget diffutils file \
+    && dnf install -y pcre-tools bc findutils wget diffutils file time \
     && dnf install -y git \
     && dnf install -y ShellCheck make pandoc  \
     && dnf install -y jq yajl \
